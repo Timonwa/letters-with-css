@@ -111,3 +111,39 @@ p {
   box-shadow: 0 0 0px 30px var(--bg);
   top: 50px;
 }
+/* C */
+.C{
+  height: 130px;
+  width: 95px;
+  background-color: transparent;
+  border-radius: 45% 28% 24% 45%;
+  border: 30px solid var(--bg);
+  border-right-width: 0;
+  -webkit-border-radius: 45% 28% 24% 45%;
+  -moz-border-radius: 45% 28% 24% 45%;
+  -ms-border-radius: 45% 28% 24% 45%;
+  -o-border-radius: 45% 28% 24% 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* O */
+.O{
+  height: 130px;
+  width: 100px;
+  background-color: transparent;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 30px var(--bg);
+}
