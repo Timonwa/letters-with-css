@@ -42,7 +42,7 @@ header {
 }
 /* shape labels */
 p {
-  padding: 10px 0;
+  padding: 0 0 20px;
   z-index: 20;
 }
 /* big A */
@@ -112,7 +112,7 @@ p {
   top: 50px;
 }
 /* C */
-.C{
+.C {
   height: 130px;
   width: 95px;
   background-color: transparent;
@@ -125,22 +125,8 @@ p {
   -o-border-radius: 45% 28% 24% 45%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* O */
-.O{
+.O {
   height: 130px;
   width: 100px;
   background-color: transparent;
