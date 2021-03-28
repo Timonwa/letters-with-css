@@ -124,6 +124,17 @@ p {
   -ms-border-radius: 45% 28% 24% 45%;
   -o-border-radius: 45% 28% 24% 45%;
 }
+/* D */
+.D{ width: 95px; height: 130px; border: solid 30px var(--bg); border-radius: 0 50px 50px 0; -webkit-border-radius: 0 50px 50px 0; -moz-border-radius: 0 50px 50px 0; -ms-border-radius: 0 50px 50px 0; -o-border-radius: 0 50px 50px 0;
+}
+
+
+
+
+
+
+
+
 
 /* O */
 .O {
