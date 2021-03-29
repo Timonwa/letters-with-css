@@ -115,20 +115,61 @@ p {
 .C {
   height: 130px;
   width: 95px;
-  background-color: transparent;
-  border-radius: 45% 28% 24% 45%;
+  border-radius: 45% 25% 24% 45%;
   border: 30px solid var(--bg);
   border-right-width: 0;
-  -webkit-border-radius: 45% 28% 24% 45%;
-  -moz-border-radius: 45% 28% 24% 45%;
-  -ms-border-radius: 45% 28% 24% 45%;
-  -o-border-radius: 45% 28% 24% 45%;
+  -webkit-border-radius: 45% 25% 24% 45%;
+  -moz-border-radius: 45% 25% 24% 45%;
+  -ms-border-radius: 45% 25% 24% 45%;
+  -o-border-radius: 45% 25% 24% 45%;
 }
 /* D */
-.D{ width: 95px; height: 130px; border: solid 30px var(--bg); border-radius: 0 50px 50px 0; -webkit-border-radius: 0 50px 50px 0; -moz-border-radius: 0 50px 50px 0; -ms-border-radius: 0 50px 50px 0; -o-border-radius: 0 50px 50px 0;
+.D {
+  width: 95px;
+  height: 130px;
+  border: solid 30px var(--bg);
+  border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -ms-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
 }
-
-
+.E {
+  width: 30px;
+  height: 130px;
+  background-color: var(--bg);
+  position: absolute;
+  left: 75px;
+}
+.E::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: var(--bg);
+  left: 30px;
+}
+.E::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: var(--bg);
+  left: 30px;
+  top: 100px;
+}
+.E-mid {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background-color: var(--bg);
+  left: 30px;
+  top: 50px;
+}
 
 
 
