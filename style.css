@@ -115,13 +115,13 @@ p {
 .C {
   height: 130px;
   width: 95px;
-  border-radius: 45% 25% 24% 45%;
+  border-radius: 45% 20% 20% 45%;
   border: 30px solid var(--bg);
   border-right-width: 0;
-  -webkit-border-radius: 45% 25% 24% 45%;
-  -moz-border-radius: 45% 25% 24% 45%;
-  -ms-border-radius: 45% 25% 24% 45%;
-  -o-border-radius: 45% 25% 24% 45%;
+  -webkit-border-radius: 45% 20% 20% 45%;
+  -moz-border-radius: 45% 20% 20% 45%;
+  -ms-border-radius: 45% 20% 20% 45%;
+  -o-border-radius: 45% 20% 20% 45%;
 }
 /* D */
 .D {
@@ -134,6 +134,7 @@ p {
   -ms-border-radius: 0 50px 50px 0;
   -o-border-radius: 0 50px 50px 0;
 }
+/* E */
 .E {
   width: 30px;
   height: 130px;
@@ -170,6 +171,7 @@ p {
   left: 30px;
   top: 50px;
 }
+/* F */
 .F {
   width: 30px;
   height: 130px;
@@ -196,7 +198,34 @@ p {
   left: 30px;
   top: 50px;
 }
-
+/* G */
+.G {
+  position: absolute;
+  height: 130px;
+  width: 95px;
+  border: 30px solid var(--bg);
+  border-right-width: 0;
+  border-radius: 45% 20% 24% 45%;
+  -webkit-border-radius: 45% 20% 24% 45%;
+  -moz-border-radius: 45% 20% 24% 45%;
+  -ms-border-radius: 45% 20% 24% 45%;
+  -o-border-radius: 45% 20% 24% 45%;
+}
+.G::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg);
+  right: 0px;
+  bottom: 0px;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
 
 
 
