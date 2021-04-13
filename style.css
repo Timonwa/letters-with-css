@@ -326,7 +326,6 @@ p {
   -ms-transform: skewX(30deg);
   -o-transform: skewX(30deg);
 }
-
 /* L */
 .L {
   background-color: var(--bg);
@@ -376,4 +375,21 @@ p {
   -moz-transform: skewX(30deg);
   -ms-transform: skewX(30deg);
   -o-transform: skewX(30deg);
+}
+/* T */
+.T {
+  background-color: var(--bg);
+  width: 35px;
+  height: 130px;
+  position: absolute;
+}
+.T::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 85px;
+  height: 30px;
+  background: var(--bg);
+  top: 0;
+  left: -25px;
 }
