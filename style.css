@@ -288,7 +288,46 @@ p {
   top: 0;
   left: -20px;
 }
-/* J */
+/* K */
+.K {
+  background-color: var(--bg);
+  width: 35px;
+  height: 130px;
+  position: absolute;
+  left: 75px;
+}
+.K::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background: var(--bg);
+  top: 0;
+  left: 37px;
+  transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+}
+.K::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  background: var(--bg);
+  bottom: 0;
+  left: 40px;
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+  -moz-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  -o-transform: skewX(30deg);
+}
+
+/* L */
 .L {
   background-color: var(--bg);
   width: 35px;
