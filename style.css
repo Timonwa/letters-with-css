@@ -351,7 +351,7 @@ p {
   position: absolute;
   left: 50px;
 }
-.M2{
+.M2 {
   background-color: var(--bg);
   width: 35px;
   height: 130px;
@@ -390,7 +390,7 @@ p {
   -o-transform: skewX(20deg);
   -webkit-transform: skewX();
 }
-.N::before{
+.N::before {
   content: "";
   position: absolute;
   background-color: var(--bg);
@@ -410,10 +410,9 @@ p {
   background-color: var(--bg);
   width: 35px;
   height: 130px;
-right: 35px;
+  right: 35px;
   transform: skewX(-20deg);
 }
-
 /* O */
 .O {
   height: 130px;
@@ -421,6 +420,29 @@ right: 35px;
   background-color: transparent;
   border-radius: 50px;
   box-shadow: inset 0 0 0 30px var(--bg);
+}
+/* P */
+.P {
+  position: absolute;
+  height: 20px;
+  width: 35px;
+  border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -ms-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
+  box-shadow: 0 0 0px 30px var(--bg);
+  top: 80px;
+}
+.P::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--bg);
+  width: 35px;
+  height: 130px;
+  left: -35px;
+  top: -30px;
 }
 /* Q */
 .Q {
