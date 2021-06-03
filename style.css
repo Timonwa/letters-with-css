@@ -668,3 +668,43 @@ p {
   -ms-transform: skewX(-20deg);
   -o-transform: skewX(-20deg);
 }
+/* Z */
+.Z {
+  background-color: var(--bg);
+  width: 35px;
+  height: 130px;
+  position: absolute;
+  left: 100px;
+  transform: skewX(-25deg);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+  -ms-transform: skewX(-25deg);
+  -o-transform: skewX(-25deg);
+}
+.Z::before {
+  content: '';
+  position: absolute;
+  background-color: var(--bg);
+  width: 80px;
+  height: 35px;
+  right: 10px;
+  transform: skewX(25deg);
+  -webkit-transform: skewX(25deg), rotateX(0deg);
+  -moz-transform: skewX(25deg), rotateX(0deg);
+  -ms-transform: skewX(25deg), rotateX(0deg);
+  -o-transform: skewX(25deg), rotateX(0deg);
+}
+.Z::after {
+  content: '';
+  position: absolute;
+  background-color: var(--bg);
+  width: 80px;
+  height: 35px;
+  left: 10px;
+  bottom: 0px;
+  transform: skewX(25deg);
+  -webkit-transform: skewX(25deg), rotateX(0deg);
+  -moz-transform: skewX(25deg), rotateX(0deg);
+  -ms-transform: skewX(25deg), rotateX(0deg);
+  -o-transform: skewX(25deg), rotateX(0deg);
+}
