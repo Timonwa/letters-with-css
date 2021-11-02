@@ -2,31 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
   --bg: #bc8f8f;
 }
 body {
-  margin: 20px;
   text-align: center;
   background-color: azure;
+  margin: 20px 0;
 }
 /* the title and subtitle of the page */
 header {
   padding: 20px 30px;
   color: purple;
-  font-weight: 500;
+}
+h1{
+  padding-bottom: 20px;
+}
+h3{
+  padding-bottom: 10px;
 }
 /* flex container containing all the shapes containers */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
   justify-content: center;
   background-color: white;
 }
 /* shape containers */
+.container>div{
+border:1px solid #eee;
+}
+/* the letters */
 .container > div > div {
   margin: 10px;
   width: 240px;
@@ -35,15 +43,13 @@ header {
   box-shadow: 0 0 5px hsl(40, 72%, 59%);
   border: solid 1px hsl(40, 72%, 59%);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-/* shape labels */
+/* the labels */
 p {
-  padding: 0 0 20px;
-  z-index: 20;
+  padding-bottom: 20px;
 }
 /* big A */
 .A {
@@ -256,14 +262,14 @@ p {
 /* I */
 .I {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
 }
 /* J */
 .J {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
   border-bottom-right-radius: 20px;
@@ -273,7 +279,7 @@ p {
   display: block;
   position: absolute;
   width: 30px;
-  height: 35px;
+  height: 30px;
   background: var(--bg);
   bottom: 0;
   left: -30px;
@@ -282,7 +288,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  width: 70px;
+  width: 20px;
   height: 30px;
   background: var(--bg);
   top: 0;
@@ -291,16 +297,16 @@ p {
 /* K */
 .K {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
-  left: 75px;
+  left: 80px;
 }
 .K::before {
   content: "";
   display: block;
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 60px;
   background: var(--bg);
   top: 0;
@@ -315,7 +321,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 70px;
   background: var(--bg);
   bottom: 0;
@@ -329,7 +335,7 @@ p {
 /* L */
 .L {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
 }
@@ -338,7 +344,7 @@ p {
   display: block;
   position: absolute;
   width: 40px;
-  height: 35px;
+  height: 30px;
   background: var(--bg);
   bottom: 0;
   right: -40px;
@@ -346,14 +352,14 @@ p {
 /* M */
 .M1 {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
   left: 50px;
 }
 .M2 {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
   right: 50px;
@@ -394,7 +400,7 @@ p {
   content: "";
   position: absolute;
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   left: 35px;
   transform: skewX(-20deg);
@@ -408,14 +414,14 @@ p {
   content: "";
   position: absolute;
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   right: 35px;
   transform: skewX(-20deg);
 }
 /* O */
 .O {
-  height: 130px;
+  height: 135px;
   width: 100px;
   background-color: transparent;
   border-radius: 50px;
@@ -425,7 +431,7 @@ p {
 .P {
   position: absolute;
   height: 20px;
-  width: 35px;
+  width: 30px;
   border-radius: 0 50px 50px 0;
   -webkit-border-radius: 0 50px 50px 0;
   -moz-border-radius: 0 50px 50px 0;
@@ -439,52 +445,14 @@ p {
   display: block;
   position: absolute;
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
-  left: -35px;
+  left: -30px;
   top: -30px;
-}
-/* R */
-.R {
-  position: absolute;
-  height: 20px;
-  width: 35px;
-  border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  box-shadow: 0 0 0px 30px var(--bg);
-  top: 80px;
-}
-.R::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: var(--bg);
-  width: 35px;
-  height: 130px;
-  left: -35px;
-  top: -30px;
-}
-.R::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: var(--bg);
-  width: 35px;
-  height: 60px;
-  left: 10px;
-  top: 40px;
-  transform: skewX(30deg);
-  -webkit-transform: skewX(30deg);
-  -moz-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  -o-transform: skewX(30deg);
 }
 /* Q */
 .Q {
-  height: 120px;
+  height: 135px;
   width: 100px;
   background-color: transparent;
   border-radius: 50px;
@@ -506,10 +474,72 @@ p {
   -ms-transform: skewX(30deg);
   -o-transform: skewX(30deg);
 }
+/* R */
+.R {
+  position: absolute;
+  height: 20px;
+  width: 30px;
+  border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -ms-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
+  box-shadow: 0 0 0px 30px var(--bg);
+  top: 80px;
+}
+.R::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--bg);
+  width: 30px;
+  height: 130px;
+  left: -30px;
+  top: -30px;
+}
+.R::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--bg);
+  width: 35px;
+  height: 60px;
+  left: 10px;
+  top: 40px;
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+  -moz-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  -o-transform: skewX(30deg);
+}
+/* S */
+.S {
+  height: 70px;
+  width: 70px;
+  border-radius: 0 50px 40px 0;
+  border: 30px solid var(--bg);
+  border-left: none;
+  border-bottom-width: 15px;
+  border-top-width: 25px;
+  position: absolute;
+  top: 60px;
+  left: 95px;
+}
+.S2 {
+  height: 75px;
+  width: 70px;
+  border-radius:  50px 0 0 45px ;
+  border: 30px solid var(--bg);
+  border-right: none;
+border-top-width: 15px;
+  position: absolute;
+  top: 105px;
+  left: 80px;
+}
 /* T */
 .T {
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
 }
@@ -522,6 +552,15 @@ p {
   background: var(--bg);
   top: 0;
   left: -25px;
+}/* U */
+.U {
+  height: 130px;
+  width: 90px;
+  border-radius: 0 0 50px 50px;
+  border: 30px solid var(--bg);
+  border-top: none;
+  position: absolute;
+  top: 50px;
 }
 /* V */
 .V {
@@ -578,7 +617,7 @@ p {
 .W1::before {
   content: "";
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
   left: 35px;
@@ -591,7 +630,7 @@ p {
 .W2::before {
   content: "";
   background-color: var(--bg);
-  width: 35px;
+  width: 30px;
   height: 130px;
   position: absolute;
   left: -35px;
@@ -631,7 +670,7 @@ p {
 .Y {
   background-color: var(--bg);
   width: 35px;
-  height: 90px;
+  height: 85px;
   position: absolute;
   top: 50px;
   left: 80px;
@@ -686,7 +725,7 @@ p {
   position: absolute;
   background-color: var(--bg);
   width: 80px;
-  height: 35px;
+  height: 30px;
   right: 10px;
   transform: skewX(25deg);
   -webkit-transform: skewX(25deg), rotateX(0deg);
@@ -699,7 +738,7 @@ p {
   position: absolute;
   background-color: var(--bg);
   width: 80px;
-  height: 35px;
+  height: 30px;
   left: 10px;
   bottom: 0px;
   transform: skewX(25deg);
@@ -707,33 +746,4 @@ p {
   -moz-transform: skewX(25deg), rotateX(0deg);
   -ms-transform: skewX(25deg), rotateX(0deg);
   -o-transform: skewX(25deg), rotateX(0deg);
-}
-/* S */
-.S {
-  height: 20px;
-  width: 30px;
-  border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  box-shadow: 0 0 0px 30px var(--bg);
-  position: absolute;
-  top: 80px;
-  border-left-width: 0;
-}
-.S::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 20px;
-  width: 35px;
-  border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  box-shadow: 0 0 0px 30px var(--bg);
-  top: 50px;
-  border-left-width: 0;
 }
