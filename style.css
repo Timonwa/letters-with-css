@@ -557,7 +557,7 @@ border-top-width: 15px;
   height: 130px;
   width: 90px;
   border-radius: 0 0 50px 50px;
-  border: 30px solid var(--bg);
+  border: 35px solid var(--bg);
   border-top: none;
   position: absolute;
   top: 50px;
