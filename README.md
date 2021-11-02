@@ -1,6 +1,6 @@
-### Creating letters of the English alphabet using CSS.
-#### A personal project to test my CSS skills.
-This project is to test my skills in the following by creating shapes using;
+# Creating letters of the English alphabet using CSS.
+## A personal project to test my CSS skills.
+This project is to test my CSS skills by creating shapes using the following;
 - ::before and ::after pseudo elements
 - border and box-shadow
 - relative and absolute positioning

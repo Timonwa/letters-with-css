@@ -473,7 +473,7 @@ p {
   position: absolute;
   background-color: var(--bg);
   width: 35px;
-  height:60px;
+  height: 60px;
   left: 10px;
   top: 40px;
   transform: skewX(30deg);
@@ -537,7 +537,7 @@ p {
   -o-transform: skewX(15deg);
 }
 .V::before {
-  content: '';
+  content: "";
   background-color: var(--bg);
   width: 35px;
   height: 130px;
@@ -562,7 +562,7 @@ p {
   -ms-transform: skewX(10deg);
   -o-transform: skewX(10deg);
 }
-.W2{
+.W2 {
   background-color: var(--bg);
   width: 35px;
   height: 130px;
@@ -574,9 +574,9 @@ p {
   -moz-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
   -o-transform: skewX(-10deg);
-} 
+}
 .W1::before {
-  content: '';
+  content: "";
   background-color: var(--bg);
   width: 35px;
   height: 130px;
@@ -589,7 +589,7 @@ p {
   -o-transform: skewX(-20deg);
 }
 .W2::before {
-  content: '';
+  content: "";
   background-color: var(--bg);
   width: 35px;
   height: 130px;
@@ -615,7 +615,7 @@ p {
   -o-transform: skewX(20deg);
 }
 .X::before {
-  content: '';
+  content: "";
   background-color: var(--bg);
   width: 35px;
   height: 130px;
@@ -642,7 +642,7 @@ p {
   -o-transform: skewX(20deg);
 }
 .Y::before {
-  content: '';
+  content: "";
   background-color: var(--bg);
   width: 35px;
   height: 80px;
@@ -655,7 +655,7 @@ p {
   -o-transform: skewX(-40deg);
 }
 .Y::after {
-  content: '';
+  content: "";
   background-color: var(--bg);
   width: 35px;
   height: 70px;
@@ -682,7 +682,7 @@ p {
   -o-transform: skewX(-25deg);
 }
 .Z::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--bg);
   width: 80px;
@@ -695,7 +695,7 @@ p {
   -o-transform: skewX(25deg), rotateX(0deg);
 }
 .Z::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--bg);
   width: 80px;
@@ -707,4 +707,33 @@ p {
   -moz-transform: skewX(25deg), rotateX(0deg);
   -ms-transform: skewX(25deg), rotateX(0deg);
   -o-transform: skewX(25deg), rotateX(0deg);
+}
+/* S */
+.S {
+  height: 20px;
+  width: 30px;
+  border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -ms-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
+  box-shadow: 0 0 0px 30px var(--bg);
+  position: absolute;
+  top: 80px;
+  border-left-width: 0;
+}
+.S::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 35px;
+  border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
+  -ms-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
+  box-shadow: 0 0 0px 30px var(--bg);
+  top: 50px;
+  border-left-width: 0;
 }
