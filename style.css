@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   --bg: #bc8f8f;
 }
@@ -14,25 +15,35 @@ header {
   padding: 20px 30px;
   color: purple;
 }
-h1{
+h1 {
   padding-bottom: 20px;
 }
-h3{
+h3 {
   padding-bottom: 10px;
 }
 /* flex container containing all the shapes containers */
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: white;
 }
 /* shape containers */
-.container>div{
-border:1px solid #eee;
+.container > div {
+  border: 1px solid #eee;
 }
 /* the letters */
 .container > div > div {
@@ -40,10 +51,17 @@ border:1px solid #eee;
   width: 240px;
   height: 240px;
   background-color: hsl(40, 97%, 75%);
+  -webkit-box-shadow: 0 0 5px hsl(40, 72%, 59%);
   box-shadow: 0 0 5px hsl(40, 72%, 59%);
   border: solid 1px hsl(40, 72%, 59%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
@@ -99,6 +117,7 @@ p {
   -moz-border-radius: 0 50px 50px 0;
   -ms-border-radius: 0 50px 50px 0;
   -o-border-radius: 0 50px 50px 0;
+  -webkit-box-shadow: 0 0 0px 30px var(--bg);
   box-shadow: 0 0 0px 30px var(--bg);
   position: absolute;
   top: 80px;
@@ -114,6 +133,7 @@ p {
   -moz-border-radius: 0 50px 50px 0;
   -ms-border-radius: 0 50px 50px 0;
   -o-border-radius: 0 50px 50px 0;
+  -webkit-box-shadow: 0 0 0px 30px var(--bg);
   box-shadow: 0 0 0px 30px var(--bg);
   top: 50px;
 }
@@ -381,7 +401,6 @@ p {
   -moz-transform: skewX(30deg);
   -ms-transform: skewX(30deg);
   -o-transform: skewX(30deg);
-  -webkit-transform: skewX();
 }
 /* N */
 .N {
@@ -394,7 +413,6 @@ p {
   -moz-transform: skewX(20deg);
   -ms-transform: skewX(20deg);
   -o-transform: skewX(20deg);
-  -webkit-transform: skewX();
 }
 .N::before {
   content: "";
@@ -408,7 +426,6 @@ p {
   -moz-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);
   -o-transform: skewX(-20deg);
-  -webkit-transform: skewX();
 }
 .N::after {
   content: "";
@@ -417,6 +434,8 @@ p {
   width: 30px;
   height: 130px;
   right: 35px;
+  -webkit-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
   transform: skewX(-20deg);
 }
 /* O */
@@ -425,6 +444,7 @@ p {
   width: 100px;
   background-color: transparent;
   border-radius: 50px;
+  -webkit-box-shadow: inset 0 0 0 30px var(--bg);
   box-shadow: inset 0 0 0 30px var(--bg);
 }
 /* P */
@@ -437,6 +457,7 @@ p {
   -moz-border-radius: 0 50px 50px 0;
   -ms-border-radius: 0 50px 50px 0;
   -o-border-radius: 0 50px 50px 0;
+  -webkit-box-shadow: 0 0 0px 30px var(--bg);
   box-shadow: 0 0 0px 30px var(--bg);
   top: 80px;
 }
@@ -456,6 +477,7 @@ p {
   width: 100px;
   background-color: transparent;
   border-radius: 50px;
+  -webkit-box-shadow: inset 0 0 0 30px var(--bg);
   box-shadow: inset 0 0 0 30px var(--bg);
   position: absolute;
 }
@@ -484,6 +506,7 @@ p {
   -moz-border-radius: 0 50px 50px 0;
   -ms-border-radius: 0 50px 50px 0;
   -o-border-radius: 0 50px 50px 0;
+  -webkit-box-shadow: 0 0 0px 30px var(--bg);
   box-shadow: 0 0 0px 30px var(--bg);
   top: 80px;
 }
@@ -528,10 +551,10 @@ p {
 .S2 {
   height: 75px;
   width: 70px;
-  border-radius:  50px 0 0 45px ;
+  border-radius: 50px 0 0 45px;
   border: 30px solid var(--bg);
   border-right: none;
-border-top-width: 15px;
+  border-top-width: 15px;
   position: absolute;
   top: 105px;
   left: 80px;
@@ -547,12 +570,12 @@ border-top-width: 15px;
   content: "";
   display: block;
   position: absolute;
-  width: 85px;
+  width: 80px;
   height: 30px;
   background: var(--bg);
   top: 0;
   left: -25px;
-}/* U */
+} /* U */
 .U {
   height: 130px;
   width: 90px;
@@ -608,11 +631,9 @@ border-top-width: 15px;
   position: absolute;
   right: 50px;
   transform: skewX(-10deg);
-  transform: rotateY(180deg);
   -webkit-transform: skewX(-10deg);
   -moz-transform: skewX(-10deg);
   -ms-transform: skewX(-10deg);
-  -o-transform: skewX(-10deg);
 }
 .W1::before {
   content: "";
