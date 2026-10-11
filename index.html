@@ -1,239 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Letters with CSS · The alphabet drawn in pure CSS</title>
+    <meta name="description" content="The 26 capital letters of the English alphabet, drawn with nothing but HTML and CSS. No images, SVG, or fonts. View and copy the code for every letter." />
+    <meta name="author" content="Timonwa Akintokun" />
+    <meta name="theme-color" content="#f4efe4" />
+    <link rel="canonical" href="https://letters-with-css.vercel.app/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <!-- * SEO Meta Tags -->
-    <!-- Primary Meta Tags -->
-    <meta
-      name="title"
-      content="Drawing Letters using Html and CSS by Timonwa"
-    />
-    <meta
-      name="description"
-      content="This project is to test one's CSS skills by creating shapes using ::before and ::after pseudo elements, border and box-shadow, relative and absolute positioning and CSS transforms also."
-    />
-    <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="url" />
-    <meta
-      property="og:title"
-      content="Drawing Letters using Html and CSS by Timonwa"
-    />
-    <meta
-      property="og:description"
-      content=" project is to test one's CSS skills by creating shapes using ::before and ::after pseudo elements, border and box-shadow, relative and absolute positioning and CSS transforms also."
-    />
-    <meta property="og:image" content="letters-banner.png" />
-    <!-- Twitter Meta Tags -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="url" />
-    <meta
-      property="twitter:title"
-      content="Drawing Letters using Html and CSS by Timonwa"
-    />
-    <meta
-      property="twitter:description"
-      content="This project is to test one's CSS skills by creating shapes using ::before and ::after pseudo elements, border and box-shadow, relative and absolute positioning and CSS transforms also."
-    />
-    <meta property="twitter:image" content="letters-banner.png" />
+    <meta property="og:site_name" content="Letters with CSS" />
+    <meta property="og:url" content="https://letters-with-css.vercel.app/" />
+    <meta property="og:title" content="Letters with CSS · The alphabet drawn in pure CSS" />
+    <meta property="og:description" content="The 26 capital letters of the English alphabet, drawn with nothing but HTML and CSS. No images, SVG, or fonts. View and copy the code for every letter." />
+    <meta property="og:image" content="https://letters-with-css.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Letters with CSS, drawn in pure CSS" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@timonwa_" />
+    <meta name="twitter:title" content="Letters with CSS · The alphabet drawn in pure CSS" />
+    <meta name="twitter:description" content="The 26 capital letters of the English alphabet, drawn with nothing but HTML and CSS. No images, SVG, or fonts. View and copy the code for every letter." />
+    <meta name="twitter:image" content="https://letters-with-css.vercel.app/og.png" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Drawing Letters using Html and CSS by Timonwa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" />
+    <link rel="stylesheet" href="/site.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Letters with CSS", "url": "https://letters-with-css.vercel.app/", "description": "The 26 capital letters of the English alphabet, drawn with nothing but HTML and CSS. No images, SVG, or fonts. View and copy the code for every letter.", "inLanguage": "en", "license": "https://opensource.org/licenses/MIT", "image": "https://letters-with-css.vercel.app/og.png", "author": {"@type": "Person", "name": "Timonwa Akintokun", "url": "https://www.timonwa.com", "sameAs": ["https://github.com/timonwa", "https://x.com/timonwa_"]}}</script>
   </head>
-  <body>
-    <header>
-      <h1>Letters with CSS</h1>
-      <h3>Using CSS to create letters of the English alphabet.</h3>
-    </header>
-    <div class="container">
-      <!-- A -->
-      <div>
-        <div>
-          <div class="A"></div>
-        </div>
-        <p>A</p>
-      </div>
-      <!-- B -->
-      <div>
-        <div>
-          <div class="B"></div>
-        </div>
-        <p>B</p>
-      </div>
-      <!-- C -->
-      <div>
-        <div>
-          <div class="C"></div>
-        </div>
-        <p>C</p>
-      </div>
-      <!-- D -->
-      <div>
-        <div>
-          <div class="D"></div>
-        </div>
-        <p>D</p>
-      </div>
-      <!-- E -->
-      <div>
-        <div>
-          <div class="E"> <div class="E-mid"></div></div>
-        </div>
-        <p>E</p>
-      </div>
-      <!-- F -->
-      <div>
-        <div>
-          <div class="F"></div>
-        </div>
-        <p>F</p>
-      </div>
-      <!-- G -->
-      <div>
-        <div>
-          <div class="G"></div>
-        </div>
-        <p>G</p>
-      </div>
-      <!-- H -->
-      <div>
-        <div>
-          <div class="H"></div>
-        </div>
-        <p>H</p>
-      </div>
-      <!-- I -->
-      <div>
-        <div>
-          <div class="I"></div>
-        </div>
-        <p>I</p>
-      </div>
-      <!-- J -->
-      <div>
-        <div>
-          <div class="J"></div>
-        </div>
-        <p>J</p>
-      </div>
-      <!-- K -->
-      <div>
-        <div>
-          <div class="K"></div>
-        </div>
-        <p>K</p>
-      </div>
-      <!-- L -->
-      <div>
-        <div>
-          <div class="L"></div>
-        </div>
-        <p>L</p>
-      </div>
-      <!-- M -->
-      <div>
-        <div>
-          <div class="M M1"></div>
-          <div class="M M2"></div>
-        </div>
-        <p>M</p>
-      </div>
-      <!-- N -->
-      <div>
-        <div>
-          <div class="N"></div>
-        </div>
-        <p>N</p>
-      </div>
-      <!-- O -->
-      <div>
-        <div>
-          <div class="O"></div>
-        </div>
-        <p>O</p>
-      </div>
-      <!-- P -->
-      <div>
-        <div>
-          <div class="P"></div>
-        </div>
-        <p>P</p>
-      </div>
-      <!-- Q -->
-      <div>
-        <div>
-          <div class="Q"></div>
-        </div>
-        <p>Q</p>
-      </div>
-      <!-- R -->
-      <div>
-        <div>
-          <div class="R"></div>
-        </div>
-        <p>R</p>
-      </div>
-      <!-- S -->
-      <div>
-        <div>
-          <div class="S"></div>
-          <div class="S2"></div>
-        </div>
-        <p>S</p>
-      </div>
-      <!-- T -->
-      <div>
-        <div>
-          <div class="T"></div>
-        </div>
-        <p>T</p>
-      </div>
-      <!-- U -->
-      <div>
-        <div>
-          <div class="U"></div>
-        </div>
-        <p>U</p>
-      </div>
-      <!-- V -->
-      <div>
-        <div>
-          <div class="V"></div>
-        </div>
-        <p>V</p>
-      </div>
-      <!-- W -->
-      <div>
-        <div>
-          <div class="W W1"></div>
-          <div class="W W2"></div>
-        </div>
-        <p>W</p>
-      </div>
-      <!-- X -->
-      <div>
-        <div>
-          <div class="X"></div>
-        </div>
-        <p>X</p>
-      </div>
-      <!-- Y -->
-      <div>
-        <div>
-          <div class="Y"></div>
-        </div>
-        <p>Y</p>
-      </div>
-      <!-- Z -->
-      <div>
-        <div>
-          <div class="Z"></div>
-        </div>
-        <p>Z</p>
-      </div>
+  <body data-box-direction="row">
+    <a class="skip-link" href="#pieces">Skip to the letters</a>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="/">Letters with CSS</a>
+        <nav class="actions" aria-label="Project">
+          <a class="btn" href="https://github.com/Timonwa/letters-with-css" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>Star on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn btn-accent" href="https://www.buymeacoffee.com/timonwa" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v2M14 2v2M6 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/></svg>Buy me a coffee<span class="sr-only"> (opens in a new tab)</span></a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <p class="eyebrow">Pure CSS</p>
+          <h1 id="page-title">Letters with CSS</h1>
+          <p>The 26 capital letters of the English alphabet, drawn with nothing but HTML and CSS. No images, no SVG, no fonts. Pick any letter to see and copy its code.</p>
+        </section>
+
+        <h2 class="sr-only" id="pieces">26 letters</h2>
+        <ul class="grid" aria-labelledby="pieces">
+        <li>
+          <button class="tile" type="button" data-piece="A" data-title="Letter A" aria-label="Letter A, view code">
+            <span class="piece-box" aria-hidden="true"><span class="A"></span></span>
+            <span class="tile-label">A</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="B" data-title="Letter B" aria-label="Letter B, view code">
+            <span class="piece-box" aria-hidden="true"><span class="B"></span></span>
+            <span class="tile-label">B</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="C" data-title="Letter C" aria-label="Letter C, view code">
+            <span class="piece-box" aria-hidden="true"><span class="C"></span></span>
+            <span class="tile-label">C</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="D" data-title="Letter D" aria-label="Letter D, view code">
+            <span class="piece-box" aria-hidden="true"><span class="D"></span></span>
+            <span class="tile-label">D</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="E" data-title="Letter E" aria-label="Letter E, view code">
+            <span class="piece-box" aria-hidden="true"><span class="E"><span class="E-mid"></span></span></span>
+            <span class="tile-label">E</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="F" data-title="Letter F" aria-label="Letter F, view code">
+            <span class="piece-box" aria-hidden="true"><span class="F"></span></span>
+            <span class="tile-label">F</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="G" data-title="Letter G" aria-label="Letter G, view code">
+            <span class="piece-box" aria-hidden="true"><span class="G"></span></span>
+            <span class="tile-label">G</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="H" data-title="Letter H" aria-label="Letter H, view code">
+            <span class="piece-box" aria-hidden="true"><span class="H"></span></span>
+            <span class="tile-label">H</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="I" data-title="Letter I" aria-label="Letter I, view code">
+            <span class="piece-box" aria-hidden="true"><span class="I"></span></span>
+            <span class="tile-label">I</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="J" data-title="Letter J" aria-label="Letter J, view code">
+            <span class="piece-box" aria-hidden="true"><span class="J"></span></span>
+            <span class="tile-label">J</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="K" data-title="Letter K" aria-label="Letter K, view code">
+            <span class="piece-box" aria-hidden="true"><span class="K"></span></span>
+            <span class="tile-label">K</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="L" data-title="Letter L" aria-label="Letter L, view code">
+            <span class="piece-box" aria-hidden="true"><span class="L"></span></span>
+            <span class="tile-label">L</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="M" data-title="Letter M" aria-label="Letter M, view code">
+            <span class="piece-box" aria-hidden="true"><span class="M M1"></span><span class="M M2"></span></span>
+            <span class="tile-label">M</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="N" data-title="Letter N" aria-label="Letter N, view code">
+            <span class="piece-box" aria-hidden="true"><span class="N"></span></span>
+            <span class="tile-label">N</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="O" data-title="Letter O" aria-label="Letter O, view code">
+            <span class="piece-box" aria-hidden="true"><span class="O"></span></span>
+            <span class="tile-label">O</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="P" data-title="Letter P" aria-label="Letter P, view code">
+            <span class="piece-box" aria-hidden="true"><span class="P"></span></span>
+            <span class="tile-label">P</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="Q" data-title="Letter Q" aria-label="Letter Q, view code">
+            <span class="piece-box" aria-hidden="true"><span class="Q"></span></span>
+            <span class="tile-label">Q</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="R" data-title="Letter R" aria-label="Letter R, view code">
+            <span class="piece-box" aria-hidden="true"><span class="R"></span></span>
+            <span class="tile-label">R</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="S" data-title="Letter S" aria-label="Letter S, view code">
+            <span class="piece-box" aria-hidden="true"><span class="S"></span><span class="S2"></span></span>
+            <span class="tile-label">S</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="T" data-title="Letter T" aria-label="Letter T, view code">
+            <span class="piece-box" aria-hidden="true"><span class="T"></span></span>
+            <span class="tile-label">T</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="U" data-title="Letter U" aria-label="Letter U, view code">
+            <span class="piece-box" aria-hidden="true"><span class="U"></span></span>
+            <span class="tile-label">U</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="V" data-title="Letter V" aria-label="Letter V, view code">
+            <span class="piece-box" aria-hidden="true"><span class="V"></span></span>
+            <span class="tile-label">V</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="W" data-title="Letter W" aria-label="Letter W, view code">
+            <span class="piece-box" aria-hidden="true"><span class="W W1"></span><span class="W W2"></span></span>
+            <span class="tile-label">W</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="X" data-title="Letter X" aria-label="Letter X, view code">
+            <span class="piece-box" aria-hidden="true"><span class="X"></span></span>
+            <span class="tile-label">X</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="Y" data-title="Letter Y" aria-label="Letter Y, view code">
+            <span class="piece-box" aria-hidden="true"><span class="Y"></span></span>
+            <span class="tile-label">Y</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        <li>
+          <button class="tile" type="button" data-piece="Z" data-title="Letter Z" aria-label="Letter Z, view code">
+            <span class="piece-box" aria-hidden="true"><span class="Z"></span></span>
+            <span class="tile-label">Z</span>
+            <span class="tile-hint" aria-hidden="true">View code</span>
+          </button>
+        </li>
+        </ul>
+
+        <section class="more" aria-labelledby="more-title">
+          <h2 id="more-title">More projects like these</h2>
+          <ul class="more-list">
+          <li>
+            <a class="more-card" href="https://shapes-with-css.vercel.app" target="_blank" rel="noopener noreferrer">
+              <span class="more-name">Shapes with CSS</span>
+              <span class="more-desc">26 shapes, from a circle to a magnifying glass, drawn in pure CSS.</span>
+              <span class="more-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a class="more-card" href="https://javascript-project-series.vercel.app" target="_blank" rel="noopener noreferrer">
+              <span class="more-name">JavaScript Project Series</span>
+              <span class="more-desc">10+ beginner JavaScript projects, each with a step-by-step tutorial.</span>
+              <span class="more-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built by <a href="https://links.timonwa.com" target="_blank" rel="noopener noreferrer">Timonwa Akintokun</a>.</p>
+        <ul class="footer-links">
+          <li><a href="https://github.com/Timonwa/letters-with-css" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.buymeacoffee.com/timonwa" target="_blank" rel="noopener noreferrer">Support my work</a></li>
+        </ul>
+      </footer>
     </div>
+
+    <dialog class="code-dialog" data-code-dialog aria-labelledby="dialog-title">
+      <div class="dialog-inner">
+        <div class="dialog-preview" data-dialog-preview></div>
+        <div class="dialog-body">
+          <div class="dialog-head">
+            <h2 class="dialog-title" id="dialog-title" data-dialog-title></h2>
+            <button class="icon-btn" type="button" data-close aria-label="Close">×</button>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Code">
+            <button class="tab" type="button" role="tab" id="tab-html" data-tab="html" aria-selected="false" aria-controls="code-panel" tabindex="-1">HTML</button>
+            <button class="tab" type="button" role="tab" id="tab-css" data-tab="css" aria-selected="true" aria-controls="code-panel">CSS</button>
+          </div>
+          <div class="code-block">
+            <pre id="code-panel" role="tabpanel" aria-labelledby="tab-css" tabindex="0"><code data-code></code></pre>
+            <button class="copy-btn" type="button" data-copy>Copy</button>
+          </div>
+          <p class="sr-only" role="status" data-status></p>
+          <p class="dialog-note">Paste both into any page to draw it. Change <code>--ink</code> to recolour it. See every letter in <a href="https://github.com/Timonwa/letters-with-css/blob/main/style.css" target="_blank" rel="noopener noreferrer">style.css on GitHub</a>.</p>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="/app.js" defer></script>
   </body>
 </html>

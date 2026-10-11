@@ -1,127 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  --bg: #bc8f8f;
-}
-body {
-  text-align: center;
-  background-color: azure;
-  margin: 20px 0;
-}
-/* the title and subtitle of the page */
-header {
-  padding: 20px 30px;
-  color: purple;
-}
-h1 {
-  padding-bottom: 20px;
-}
-h3 {
-  padding-bottom: 10px;
-}
-/* flex container containing all the shapes containers */
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: white;
-}
-/* shape containers */
-.container > div {
-  border: 1px solid #eee;
-}
-/* the letters */
-.container > div > div {
-  margin: 10px;
-  width: 240px;
-  height: 240px;
-  background-color: hsl(40, 97%, 75%);
-  -webkit-box-shadow: 0 0 5px hsl(40, 72%, 59%);
-  box-shadow: 0 0 5px hsl(40, 72%, 59%);
-  border: solid 1px hsl(40, 72%, 59%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-/* the labels */
-p {
-  padding-bottom: 20px;
-}
+/* Letters with CSS: every piece is drawn inside a 240×240 box (see site.css)
+   and coloured with var(--ink). */
+
 /* big A */
 .A {
   width: 50px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   z-index: 0;
+  margin-top: 10px;
 }
+
 .A::before {
   content: "";
   display: block;
   position: absolute;
   width: 30px;
   height: 130px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   z-index: 23;
   transform: skewX(-15deg);
-  -webkit-transform: skewX(-15deg);
-  -moz-transform: skewX(-15deg);
-  -ms-transform: skewX(-15deg);
-  -o-transform: skewX(-15deg);
-  top: 50px;
+  top: 55px;
   left: 80px;
 }
+
 .A::after {
   content: "";
   display: block;
   position: absolute;
   width: 30px;
   height: 130px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   z-index: 23;
   transform: skewX(15deg);
-  top: 50px;
+  top: 55px;
   right: 80px;
-  -webkit-transform: skewX(15deg);
-  -moz-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
 }
+
 /* B */
 .B {
   height: 20px;
   width: 30px;
   border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  -webkit-box-shadow: 0 0 0px 30px var(--bg);
-  box-shadow: 0 0 0px 30px var(--bg);
+  box-shadow: 0 0 0px 30px var(--ink);
   position: absolute;
-  top: 80px;
+  top: 85px;
+  margin-left: -4px;
 }
+
 .B::after {
   content: "";
   display: block;
@@ -129,642 +54,582 @@ p {
   height: 20px;
   width: 35px;
   border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  -webkit-box-shadow: 0 0 0px 30px var(--bg);
-  box-shadow: 0 0 0px 30px var(--bg);
+  box-shadow: 0 0 0px 30px var(--ink);
   top: 50px;
 }
+
 /* C */
 .C {
   height: 130px;
   width: 95px;
   border-radius: 45% 20% 20% 45%;
-  border: 30px solid var(--bg);
+  border: 30px solid var(--ink);
   border-right-width: 0;
-  -webkit-border-radius: 45% 20% 20% 45%;
-  -moz-border-radius: 45% 20% 20% 45%;
-  -ms-border-radius: 45% 20% 20% 45%;
-  -o-border-radius: 45% 20% 20% 45%;
 }
+
 /* D */
 .D {
   width: 95px;
   height: 130px;
-  border: solid 30px var(--bg);
+  border: solid 30px var(--ink);
   border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
 }
+
 /* E */
 .E {
   width: 30px;
   height: 130px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   position: absolute;
   left: 75px;
 }
+
 .E::before {
   content: "";
   display: block;
   position: absolute;
   width: 50px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   left: 30px;
 }
+
 .E::after {
   content: "";
   display: block;
   position: absolute;
   width: 60px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   left: 30px;
   top: 100px;
 }
+
 .E-mid {
   content: "";
   display: block;
   position: absolute;
   width: 40px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   left: 30px;
   top: 50px;
 }
+
 /* F */
 .F {
   width: 30px;
   height: 130px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   position: absolute;
   left: 75px;
 }
+
 .F::before {
   content: "";
   display: block;
   position: absolute;
   width: 60px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   left: 30px;
 }
+
 .F::after {
   content: "";
   display: block;
   position: absolute;
   width: 40px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   left: 30px;
   top: 50px;
 }
+
 /* G */
 .G {
   position: absolute;
   height: 130px;
   width: 95px;
-  border: 30px solid var(--bg);
+  border: 30px solid var(--ink);
   border-right-width: 0;
   border-radius: 45% 20% 24% 45%;
-  -webkit-border-radius: 45% 20% 24% 45%;
-  -moz-border-radius: 45% 20% 24% 45%;
-  -ms-border-radius: 45% 20% 24% 45%;
-  -o-border-radius: 45% 20% 24% 45%;
 }
+
 .G::before {
   content: "";
   display: block;
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: var(--bg);
+  background-color: var(--ink);
   right: 0px;
   bottom: 0px;
   border-radius: 0px 5px 0 0;
-  -webkit-border-radius: 0px 5px 0 0;
-  -moz-border-radius: 0px 5px 0 0;
-  -ms-border-radius: 0px 5px 0 0;
-  -o-border-radius: 0px 5px 0 0;
 }
+
 /* H */
 .H {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 30px;
   position: absolute;
 }
+
 .H::before {
   content: "";
   display: block;
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   left: -30px;
   top: -50px;
 }
+
 .H::after {
   content: "";
   display: block;
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   right: -30px;
   top: -50px;
 }
+
 /* I */
 .I {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
 }
+
 /* J */
 .J {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
   border-bottom-right-radius: 20px;
+  margin-left: 32px;
 }
+
 .J::before {
   content: "";
   display: block;
   position: absolute;
   width: 30px;
   height: 30px;
-  background: var(--bg);
+  background: var(--ink);
   bottom: 0;
   left: -30px;
 }
+
 .J::after {
   content: "";
   display: block;
   position: absolute;
   width: 20px;
   height: 30px;
-  background: var(--bg);
+  background: var(--ink);
   top: 0;
   left: -20px;
 }
+
 /* K */
 .K {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
-  left: 80px;
+  left: 73px;
 }
+
 .K::before {
   content: "";
   display: block;
   position: absolute;
   width: 35px;
   height: 60px;
-  background: var(--bg);
+  background: var(--ink);
   top: 0;
   left: 37px;
   transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  -moz-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  -o-transform: skewX(-30deg);
 }
+
 .K::after {
   content: "";
   display: block;
   position: absolute;
   width: 35px;
-  height: 70px;
-  background: var(--bg);
+  height: 72px;
+  background: var(--ink);
   bottom: 0;
   left: 40px;
   transform: skewX(30deg);
-  -webkit-transform: skewX(30deg);
-  -moz-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  -o-transform: skewX(30deg);
 }
+
 /* L */
 .L {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
+  margin-left: -40px;
 }
+
 .L::before {
   content: "";
   display: block;
   position: absolute;
   width: 40px;
   height: 30px;
-  background: var(--bg);
+  background: var(--ink);
   bottom: 0;
   right: -40px;
 }
+
 /* M */
 .M1 {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
   left: 50px;
 }
+
 .M2 {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
   right: 50px;
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
 }
+
 .M::before {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 70px;
   position: absolute;
   left: 30px;
   transform: skewX(30deg);
-  -webkit-transform: skewX(30deg);
-  -moz-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  -o-transform: skewX(30deg);
 }
+
 /* N */
 .N {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
   transform: skewX(20deg);
-  -webkit-transform: skewX(20deg);
-  -moz-transform: skewX(20deg);
-  -ms-transform: skewX(20deg);
-  -o-transform: skewX(20deg);
 }
+
 .N::before {
   content: "";
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   left: 35px;
   transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
 }
+
 .N::after {
   content: "";
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   right: 35px;
-  -webkit-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
   transform: skewX(-20deg);
 }
+
 /* O */
 .O {
   height: 135px;
   width: 100px;
   background-color: transparent;
   border-radius: 50px;
-  -webkit-box-shadow: inset 0 0 0 30px var(--bg);
-  box-shadow: inset 0 0 0 30px var(--bg);
+  box-shadow: inset 0 0 0 30px var(--ink);
 }
+
 /* P */
 .P {
   position: absolute;
   height: 20px;
   width: 30px;
   border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  -webkit-box-shadow: 0 0 0px 30px var(--bg);
-  box-shadow: 0 0 0px 30px var(--bg);
-  top: 80px;
+  box-shadow: 0 0 0px 30px var(--ink);
+  top: 85px;
 }
+
 .P::before {
   content: "";
   display: block;
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   left: -30px;
   top: -30px;
 }
+
 /* Q */
 .Q {
   height: 135px;
   width: 100px;
   background-color: transparent;
   border-radius: 50px;
-  -webkit-box-shadow: inset 0 0 0 30px var(--bg);
-  box-shadow: inset 0 0 0 30px var(--bg);
+  box-shadow: inset 0 0 0 30px var(--ink);
   position: absolute;
 }
+
 .Q::before {
   content: "";
   display: block;
   position: absolute;
   width: 40px;
   height: 40px;
-  background: var(--bg);
+  background: var(--ink);
   bottom: -10px;
   right: 0px;
   transform: skewX(30deg);
-  -webkit-transform: skewX(30deg);
-  -moz-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  -o-transform: skewX(30deg);
 }
+
 /* R */
 .R {
   position: absolute;
   height: 20px;
   width: 30px;
   border-radius: 0 50px 50px 0;
-  -webkit-border-radius: 0 50px 50px 0;
-  -moz-border-radius: 0 50px 50px 0;
-  -ms-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
-  -webkit-box-shadow: 0 0 0px 30px var(--bg);
-  box-shadow: 0 0 0px 30px var(--bg);
-  top: 80px;
+  box-shadow: 0 0 0px 30px var(--ink);
+  top: 85px;
 }
+
 .R::before {
   content: "";
   display: block;
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   left: -30px;
   top: -30px;
 }
+
 .R::after {
   content: "";
   display: block;
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 60px;
   left: 10px;
   top: 40px;
   transform: skewX(30deg);
-  -webkit-transform: skewX(30deg);
-  -moz-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  -o-transform: skewX(30deg);
 }
+
 /* S */
+/* S: two offset bowls. Each half is shifted by the 30px radius where they
+   meet, so the middle stroke's curve and square end line up exactly. */
 .S {
   height: 70px;
   width: 70px;
-  border-radius: 0 50px 40px 0;
-  border: 30px solid var(--bg);
-  border-left: none;
-  border-bottom-width: 15px;
-  border-top-width: 25px;
-  position: absolute;
-  top: 60px;
-  left: 95px;
-}
-.S2 {
-  height: 75px;
-  width: 70px;
-  border-radius: 50px 0 0 45px;
-  border: 30px solid var(--bg);
+  border-radius: 50px 15px 0 30px;
+  border: 30px solid var(--ink);
   border-right: none;
-  border-top-width: 15px;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
   position: absolute;
-  top: 105px;
-  left: 80px;
+  top: 55px;
+  left: 70px;
 }
+
+.S2 {
+  height: 85px;
+  width: 70px;
+  border-radius: 0 30px 50px 15px;
+  border: 30px solid var(--ink);
+  border-left: none;
+  border-top-width: 25px;
+  border-bottom-width: 25px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
 /* T */
 .T {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
 }
+
 .T::after {
   content: "";
   display: block;
   position: absolute;
   width: 80px;
   height: 30px;
-  background: var(--bg);
+  background: var(--ink);
   top: 0;
   left: -25px;
-} /* U */
+}
+
+/* U */
 .U {
   height: 130px;
   width: 90px;
   border-radius: 0 0 50px 50px;
-  border: 35px solid var(--bg);
+  border: 35px solid var(--ink);
   border-top: none;
   position: absolute;
-  top: 50px;
+  top: 55px;
 }
+
 /* V */
 .V {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
-  left: 70px;
+  left: 74px;
   transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  -moz-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
 }
+
 .V::before {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
   left: 55px;
   transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  -moz-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  -o-transform: skewX(-30deg);
 }
+
 /* W */
 .W1 {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
   left: 50px;
   transform: skewX(10deg);
-  -webkit-transform: skewX(10deg);
-  -moz-transform: skewX(10deg);
-  -ms-transform: skewX(10deg);
-  -o-transform: skewX(10deg);
 }
+
 .W2 {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
   right: 50px;
   transform: skewX(-10deg);
-  -webkit-transform: skewX(-10deg);
-  -moz-transform: skewX(-10deg);
-  -ms-transform: skewX(-10deg);
 }
+
 .W1::before {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
   left: 35px;
   transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
 }
+
 .W2::before {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 30px;
   height: 130px;
   position: absolute;
   left: -35px;
   transform: skewX(20deg);
-  -webkit-transform: skewX(20deg);
-  -moz-transform: skewX(20deg);
-  -ms-transform: skewX(20deg);
-  -o-transform: skewX(20deg);
 }
+
 /* X */
 .X {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
-  left: 100px;
+  left: 103px;
   transform: skewX(20deg);
-  -webkit-transform: skewX(20deg);
-  -moz-transform: skewX(20deg);
-  -ms-transform: skewX(20deg);
-  -o-transform: skewX(20deg);
 }
+
 .X::before {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
   left: 0px;
   transform: skewX(-40deg);
-  -webkit-transform: skewX(-40deg);
-  -moz-transform: skewX(-40deg);
-  -ms-transform: skewX(-40deg);
-  -o-transform: skewX(-40deg);
 }
+
 /* Y */
 .Y {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 85px;
   position: absolute;
-  top: 50px;
-  left: 80px;
+  top: 55px;
+  left: 84px;
   transform: skewX(20deg);
-  -webkit-transform: skewX(20deg);
-  -moz-transform: skewX(20deg);
-  -ms-transform: skewX(20deg);
-  -o-transform: skewX(20deg);
 }
+
 .Y::before {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 80px;
   position: absolute;
   left: 35px;
   transform: skewX(-40deg);
-  -webkit-transform: skewX(-40deg);
-  -moz-transform: skewX(-40deg);
-  -ms-transform: skewX(-40deg);
-  -o-transform: skewX(-40deg);
 }
+
 .Y::after {
   content: "";
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
-  height: 70px;
+  height: 60px;
   position: absolute;
   left: -7px;
   top: 70px;
   transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
 }
+
 /* Z */
 .Z {
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 35px;
   height: 130px;
   position: absolute;
-  left: 100px;
+  left: 103px;
   transform: skewX(-25deg);
-  -webkit-transform: skewX(-25deg);
-  -moz-transform: skewX(-25deg);
-  -ms-transform: skewX(-25deg);
-  -o-transform: skewX(-25deg);
 }
+
 .Z::before {
   content: "";
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 80px;
   height: 30px;
   right: 10px;
   transform: skewX(25deg);
-  -webkit-transform: skewX(25deg), rotateX(0deg);
-  -moz-transform: skewX(25deg), rotateX(0deg);
-  -ms-transform: skewX(25deg), rotateX(0deg);
-  -o-transform: skewX(25deg), rotateX(0deg);
 }
+
 .Z::after {
   content: "";
   position: absolute;
-  background-color: var(--bg);
+  background-color: var(--ink);
   width: 80px;
   height: 30px;
   left: 10px;
   bottom: 0px;
   transform: skewX(25deg);
-  -webkit-transform: skewX(25deg), rotateX(0deg);
-  -moz-transform: skewX(25deg), rotateX(0deg);
-  -ms-transform: skewX(25deg), rotateX(0deg);
-  -o-transform: skewX(25deg), rotateX(0deg);
 }
