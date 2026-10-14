@@ -59,10 +59,6 @@ Use a server rather than opening `index.html` directly: browsers block the code 
 - [Shapes with CSS](https://shapes-with-css.vercel.app): 26 shapes, from a circle to a magnifying glass, drawn in pure CSS ([source](https://github.com/Timonwa/shapes-with-css)).
 - [JavaScript Project Series](https://javascript-project-series.vercel.app): 10+ beginner JavaScript projects, each with a step-by-step tutorial ([source](https://github.com/Timonwa/javascript-project-series)).
 
-## Contributing
-
-Found a letter that could be drawn more simply? Open an [issue](https://github.com/Timonwa/letters-with-css/issues) or a pull request.
-
 ## License
 
 [MIT](LICENSE) © Timonwa Akintokun
